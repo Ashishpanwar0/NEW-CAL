@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calcu">
+        <input type="number" id=cal onclick="show()">
+        <br>
+        <button onclick="num1()">1</button>
+        <button onclick="num2()">2</button>
+        <button onclick="num3()">3</button>
+        <button onclick="div()">/</button>
+        <br>
+        <button onclick="num4()">4</button>
+        <button onclick="num5()">5</button>
+        <button onclick="num6()">6</button>
+        <button onclick="sub()">-</button>
+        <br>
+        <button onclick="num7()">7</button>
+        <button onclick="num8()">8</button>
+        <button onclick="num9()">9</button>
+        <button onclick="multi()">*</button>
+        <br>
+        <button onclick="num0()">0</button>
+        <button>.</button>
+        <button onclick="edd()">+</button>
+        <button onclick="equal()">=</button>
+    </div>
+    <h2 id="result"></h2>
+
+
+
+
+    <script>
+         var ext=""
+        var n1,n2,eq,op,shows;
+        function num1()
+        {
+            document.getElementById("cal").value=ext+="1";
+        }
+        function num2()
+        {
+            document.getElementById("cal").value=ext+="2";
+        }
+        function num3()
+        {
+            document.getElementById("cal").value=ext+="3";
+        }
+        function num4()
+        {
+            document.getElementById("cal").value=ext=+"4";
+        }
+        function num5()
+        {
+            document.getElementById("cal").value=ext=+"5";
+        }
+        function num6()
+        {
+            document.getElementById("cal").value=ext=+"6";
+        }
+        function num7()
+        {
+            document.getElementById("cal").value=ext=+"7";
+        }
+        function num8()
+        {
+            document.getElementById("cal").value=ext=+"8";
+        }
+        function num9()
+        {
+            document.getElementById("cal").value=ext=+"9";
+        }
+        function num0()
+        {
+            document.getElementById("cal").value=ext=+"0";
+        }
+
+
+
+
+
+
+        function edd()
+        {
+            n1=document.getElementById("cal").value;
+            document.getElementById("cal").value="";
+            ext="";
+            op="+";
+        }
+        function sub()
+        {
+            n1=document.getElementById("cal").value;
+            document.getElementById("cal").value="";
+            ext="";
+            op="-";
+        }
+        function div()
+        {
+            n1=document.getElementById("cal").value;
+            document.getElementById("cal").value="";
+            ext="";
+            op="/"
+        }
+        function multi()
+        {
+            n1=document.getElementById("cal").value;
+            document.getElementById("cal").value="";
+            ext="";
+            op="*"
+        }
+
+    </script>
+</body>
+</html>
